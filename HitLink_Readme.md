@@ -1,4 +1,4 @@
-# 简易通讯协议Hit_Link说明
+#  简易通讯协议Hit_Link说明
 
 ## 使用范围
 
@@ -77,13 +77,13 @@ Checksum 的具体算法请参考：[Wiki: Checksum](https://en.wikipedia.org/wi
 
 心跳包表示飞控正在工作且与地面站建立了联系，或是地面站告知飞控已经建立联系的返回（应答）包。
 
-| 域名          | 数据类型 | 描述                                                         |
-| ------------- | -------- | ------------------------------------------------------------ |
-| type          | unit8_t  | 飞行器类型/地面站(Quadrotor， Ground Control System and others, defined in HIT_TYPEENUM ) |
-| connect_flag  | unit8_t  | 连接状态 (AVALIABLE, UNAVALIABLE, define in HIT_CONNECT_FLAGENUM) |
-| system_status | unit8_t  | 系统状态 (Lock, Auto, Stable, etc.  define in HIT_STATEENUM) |
-| time_stamp    | unit16_t | 系统时间戳                                                   |
-| ……            | ……       | ……                                                           |
+| 域名         | 数据类型 | 描述                                                         |
+| ------------ | -------- | ------------------------------------------------------------ |
+| time_stamp   | unit32_t | 系统时间戳                                                   |
+| type         | int      | 飞行器类型/地面站(Quadrotor， Ground Control System and others, defined in HIT_TYPEENUM ) |
+| connect_flag | int      | 连接状态 (AVALIABLE, UNAVALIABLE, define in HIT_CONNECT_FLAGENUM) |
+| system_state | int      | 系统状态 (Lock, Auto, Stable, etc.  define in HIT_STATEENUM) |
+| ……           | ……       | ……                                                           |
 
 ## 1 ATTITUTE 姿态数据
 
