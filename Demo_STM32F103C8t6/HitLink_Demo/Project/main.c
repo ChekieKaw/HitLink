@@ -47,6 +47,7 @@ int main(void)
     for(j=0;j<msg_len;j++)
 	{
 		USART_SendData(USART1,hitlink_msg_buffer[j]);
+		while(USART_GetFlagStatus(USART1,USART_FLAG_TC)!=SET);// wait
 	}
     
 }
