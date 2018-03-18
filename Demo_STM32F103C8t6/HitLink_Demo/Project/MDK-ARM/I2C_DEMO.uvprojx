@@ -613,6 +613,36 @@
               <FileType>5</FileType>
               <FilePath>..\..\HitLink\checksum.h</FilePath>
             </File>
+            <File>
+              <FileName>hitlink_heartbeat.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\HitLink\hitlink_heartbeat.h</FilePath>
+            </File>
+            <File>
+              <FileName>protocol.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\HitLink\protocol.h</FilePath>
+            </File>
+            <File>
+              <FileName>protocol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\HitLink\protocol.c</FilePath>
+            </File>
+            <File>
+              <FileName>hitlink_heartbeat.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\HitLink\hitlink_heartbeat.c</FilePath>
+            </File>
+            <File>
+              <FileName>hitlink_attitute.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\..\HitLink\hitlink_attitute.h</FilePath>
+            </File>
+            <File>
+              <FileName>hitlink_attitute.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\..\HitLink\hitlink_attitute.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

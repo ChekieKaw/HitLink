@@ -15,11 +15,16 @@
 #include "usart.h"
 #include "i2c.h"
 #include <stdio.h>
+#include "string.h"
+#include "hitlink.h"
+#include "protocol.h"
 
+hitlink_msg msg;
+hitlink_heartbeat_t heartbeat;
 
-
-void I2C_Test(void);
-
+void msg_init_heartbeat(hitlink_heartbeat_t *heartbeat);
+void msg_init_hitlink(hitlink_msg *hitlink_msg);
+char hitlink_msg_buffer[(HITLINK_MAX_LEN+6)];
 
 /**
   * @file   main
@@ -29,22 +34,36 @@ void I2C_Test(void);
   */
 int main(void)
 {
+	int msg_len=0;
+	int j=0;
     SYSTICK_Init();
     USART1_Config();
     LED_GPIO_Config();	
-    I2C_Configuration();
-    printf("\r\n 这是一个I2C外设(AT24C08)读写测试例程 \r\n");
-    I2C_Test();
-    while (1)
-    {
-     LEDXToggle(LED1);
-    LEDXToggle(LED2);
-    LEDXToggle(LED3);
-    delay_ms(500);
-    }
+    msg_init_heartbeat(&heartbeat);
+	msg_init_hitlink(&msg);
+	hit_link_msg2buffer(&msg,hitlink_msg_buffer);
+	msg_len = strlen(hitlink_msg_buffer);
+	
+    for(j=0;j<msg_len;j++)
+	{
+		USART_SendData(USART1,hitlink_msg_buffer[j]);
+	}
     
 }
 
+void msg_init_heartbeat(hitlink_heartbeat_t *heartbeat)
+{
+	heartbeat->time_stamp = 0x11111111;
+	heartbeat->type = Quadrotor;
+	heartbeat->system_state = Auto;
+	heartbeat->connect_flag = UNAVALIABLE;
+}
+
+void msg_init_hitlink(hitlink_msg *hitlink_msg)
+{
+	hitlink_init(hitlink_msg);
+//	hitlink_calculatelen（hitlink_msg);
+}
 
 /*********************************************************************************************************
       END FILE

@@ -31,3 +31,5 @@
 .\obj\hitlink.o: ..\..\BSP\SYSTICK.h
 .\obj\hitlink.o: ..\..\BSP\usart.h
 .\obj\hitlink.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\hitlink.o: ..\..\HitLink\checksum.h
+.\obj\hitlink.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

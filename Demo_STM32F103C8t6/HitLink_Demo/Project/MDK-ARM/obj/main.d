@@ -32,3 +32,9 @@
 .\obj\main.o: ..\..\BSP\usart.h
 .\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\main.o: ..\..\BSP\i2c.h
+.\obj\main.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\main.o: ..\..\HitLink\hitlink.h
+.\obj\main.o: ..\..\HitLink\protocol.h
+.\obj\main.o: ..\..\HitLink\hitlink_heartbeat.h
+.\obj\main.o: ..\..\HitLink\protocol.h
+.\obj\main.o: ..\..\HitLink\hitlink_attitute.h
