@@ -7,6 +7,9 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f10x.h"
 #include <stdint.h>
+#include "protocol.h"
+#include "hitlink_heartbeat.h"
+#include "hitlink_attitute.h"
 
 /* Private define ------------------------------------------------------------*/
 #ifndef HITLINK_STR
