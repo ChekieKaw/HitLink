@@ -29,7 +29,12 @@
 .\obj\hitlink.o: ..\..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\hitlink.o: ..\..\HitLink\hitlink.h
 .\obj\hitlink.o: ..\..\BSP\SYSTICK.h
-.\obj\hitlink.o: ..\..\BSP\usart.h
+.\obj\hitlink.o: ..\..\HitLink\protocol.h
 .\obj\hitlink.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\hitlink.o: ..\..\HitLink\hitlink_heartbeat.h
+.\obj\hitlink.o: ..\..\HitLink\protocol.h
+.\obj\hitlink.o: ..\..\HitLink\hitlink_attitute.h
+.\obj\hitlink.o: ..\..\HitLink\hitlink.h
+.\obj\hitlink.o: ..\..\BSP\usart.h
 .\obj\hitlink.o: ..\..\HitLink\checksum.h
 .\obj\hitlink.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

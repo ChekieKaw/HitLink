@@ -5,7 +5,7 @@
 <h2>Tool Versions:</h2>
 IDE-Version: μVision V5.14.0.0
 Copyright (C) 2015 ARM Ltd and ARM Germany GmbH. All rights reserved.
-License Information: Chekie Kaw, Harbin Institute of Technology, LIC=CRMNN-YAFXT-D25L7-EZMZ9-3FT8P-GBIZM
+License Information: Chkie Kaw, Harbin Institute of Technology, LIC=3UUFW-QR32C-77MRP-M7NJX-IHFEP-NV8ZL
  
 Tool Versions:
 Toolchain:       MDK-ARM Professional  Version: 5.14.0.0
@@ -21,18 +21,22 @@ Target DLL:      Segger\JL2CM3.dll V2.99.13.0
 Dialog DLL:      TARMSTM.DLL V1.64.0.0
  
 <h2>Project:</h2>
-D:\Documents\哈工大\无人机\HitLink\Demo_STM32F103C8t6\HitLink_Demo\Project\MDK-ARM\I2C_DEMO.uvprojx
-Project File Date:  03/19/2018
+C:\Users\wguo2\Documents\GitHub\HitLink\Demo_STM32F103C8t6\HitLink_Demo\Project\MDK-ARM\I2C_DEMO.uvprojx
+Project File Date:  03/25/2018
 
 <h2>Output:</h2>
 Rebuild target 'I2C_DEMO'
 assembling startup_stm32f10x_md.s...
 compiling main.c...
-..\..\HitLink\hitlink.h(42): warning:  #1-D: last line of file ends without a newline
+..\..\HitLink\hitlink.h(49): warning:  #1-D: last line of file ends without a newline
         
 ..\..\HitLink\hitlink_attitute.h(40): warning:  #1-D: last line of file ends without a newline
   #endif
-..\main.c: 2 warnings, 0 errors
+..\..\HitLink\hitlink.h(49): warning:  #1-D: last line of file ends without a newline
+        
+..\main.c(43): warning:  #223-D: function "hitlink_heartbeat_pack" declared implicitly
+        hitlink_heartbeat_pack(&heartbeat,&msg);
+..\main.c: 4 warnings, 0 errors
 compiling stm32f10x_it.c...
 compiling misc.c...
 compiling stm32f10x_adc.c...
@@ -66,11 +70,17 @@ compiling i2c.c...
                 if(  memcmp(WriteBuffer,ReadBuffer,sizeof(WriteBuffer)) == 0 ) /* 匹配数据 */
 ..\..\BSP\i2c.c: 1 warning, 0 errors
 compiling hitlink.c...
-..\..\HitLink\hitlink.h(42): warning:  #1-D: last line of file ends without a newline
+..\..\HitLink\hitlink.h(49): warning:  #1-D: last line of file ends without a newline
         
-..\..\HitLink\hitlink.c: 1 warning, 0 errors
+..\..\HitLink\hitlink_attitute.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\HitLink\hitlink.h(49): warning:  #1-D: last line of file ends without a newline
+        
+..\..\HitLink\hitlink.c: 3 warnings, 0 errors
 compiling protocol.c...
-..\..\HitLink\hitlink.h(42): warning:  #1-D: last line of file ends without a newline
+..\..\HitLink\hitlink_attitute.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\HitLink\hitlink.h(49): warning:  #1-D: last line of file ends without a newline
         
 ..\..\HitLink\hitlink_attitute.h(40): warning:  #1-D: last line of file ends without a newline
   #endif
@@ -78,23 +88,27 @@ compiling protocol.c...
         char uint32_t_buf[UINT32_SIZE];
 ..\..\HitLink\protocol.c(34): warning:  #550-D: variable "int_buf" was set but never used
         char int_buf[INT_SIZE];
-..\..\HitLink\protocol.c: 4 warnings, 0 errors
+..\..\HitLink\protocol.c: 5 warnings, 0 errors
 compiling hitlink_heartbeat.c...
-..\..\HitLink\hitlink.h(42): warning:  #1-D: last line of file ends without a newline
+..\..\HitLink\hitlink_attitute.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\HitLink\hitlink.h(49): warning:  #1-D: last line of file ends without a newline
         
 ..\..\HitLink\hitlink_attitute.h(40): warning:  #1-D: last line of file ends without a newline
   #endif
-..\..\HitLink\hitlink_heartbeat.c: 2 warnings, 0 errors
+..\..\HitLink\hitlink_heartbeat.c: 3 warnings, 0 errors
 compiling hitlink_attitute.c...
-..\..\HitLink\hitlink.h(42): warning:  #1-D: last line of file ends without a newline
+..\..\HitLink\hitlink_attitute.h(40): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\..\HitLink\hitlink.h(49): warning:  #1-D: last line of file ends without a newline
         
 ..\..\HitLink\hitlink_attitute.h(40): warning:  #1-D: last line of file ends without a newline
   #endif
-..\..\HitLink\hitlink_attitute.c: 2 warnings, 0 errors
+..\..\HitLink\hitlink_attitute.c: 3 warnings, 0 errors
 linking...
-Program Size: Code=4296 RO-data=268 RW-data=52 ZI-data=1548  
+Program Size: Code=4540 RO-data=268 RW-data=52 ZI-data=1548  
 FromELF: creating hex file...
-".\obj\Demo_hitlink.axf" - 0 Error(s), 12 Warning(s).
+".\obj\Demo_hitlink.axf" - 0 Error(s), 19 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -105,7 +119,7 @@ Package Vendor: ARM
    * Component: CORE Version: 3.40.0
 
 <h2>Collection of Component include folders:</h2>
-  D:\Documents\哈工大\无人机\HitLink\Demo_STM32F103C8t6\HitLink_Demo\Project\MDK-ARM\RTE
+  C:\Users\wguo2\Documents\GitHub\HitLink\Demo_STM32F103C8t6\HitLink_Demo\Project\MDK-ARM\RTE
   C:\Keil_v5\ARM\PACK\ARM\CMSIS\4.2.0\CMSIS\Include
   C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.5\Device\Include
 

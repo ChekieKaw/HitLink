@@ -34,4 +34,5 @@
 .\obj\protocol.o: ..\..\HitLink\protocol.h
 .\obj\protocol.o: ..\..\HitLink\hitlink_attitute.h
 .\obj\protocol.o: ..\..\HitLink\hitlink.h
+.\obj\protocol.o: ..\..\HitLink\hitlink_attitute.h
 .\obj\protocol.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

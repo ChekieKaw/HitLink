@@ -3,13 +3,10 @@
 
 #include "stm32f10x.h"
 #include "SYSTICK.h"
-
-/* Includes ------------------------------------------------------------------*/
-#include "stm32f10x.h"
 #include <stdint.h>
-#include "protocol.h"
-#include "hitlink_heartbeat.h"
-#include "hitlink_attitute.h"
+
+
+
 
 /* Private define ------------------------------------------------------------*/
 #ifndef HITLINK_STR
@@ -38,7 +35,14 @@ typedef struct __hitlink_msg{
 void hitlink_calculatelen(hitlink_msg *hitlinkmsg);
 void hitlink_init(hitlink_msg *hitlinkmsg);
 void hit_link_msg2buffer(hitlink_msg *hitlinkmsg, char *pbuffer);
+	
+/* Includes ------------------------------------------------------------------*/
+#include "protocol.h"
+#include "hitlink_heartbeat.h"
+#include "hitlink_attitute.h"
+
 #endif
+	
 /*********************************************************************************************************
       END FILE
 *********************************************************************************************************/

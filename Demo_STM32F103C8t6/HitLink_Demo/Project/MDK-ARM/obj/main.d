@@ -38,3 +38,4 @@
 .\obj\main.o: ..\..\HitLink\hitlink_heartbeat.h
 .\obj\main.o: ..\..\HitLink\protocol.h
 .\obj\main.o: ..\..\HitLink\hitlink_attitute.h
+.\obj\main.o: ..\..\HitLink\hitlink.h

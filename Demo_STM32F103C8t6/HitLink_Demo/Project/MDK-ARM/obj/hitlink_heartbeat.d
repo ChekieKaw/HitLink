@@ -34,4 +34,5 @@
 .\obj\hitlink_heartbeat.o: ..\..\HitLink\protocol.h
 .\obj\hitlink_heartbeat.o: ..\..\HitLink\hitlink_attitute.h
 .\obj\hitlink_heartbeat.o: ..\..\HitLink\hitlink.h
+.\obj\hitlink_heartbeat.o: ..\..\HitLink\hitlink_attitute.h
 .\obj\hitlink_heartbeat.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h

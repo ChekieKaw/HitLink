@@ -17,7 +17,6 @@
 #include <stdio.h>
 #include "string.h"
 #include "hitlink.h"
-#include "protocol.h"
 
 hitlink_msg msg;
 hitlink_heartbeat_t heartbeat;
@@ -41,6 +40,7 @@ int main(void)
     LED_GPIO_Config();	
     msg_init_heartbeat(&heartbeat);
 	msg_init_hitlink(&msg);
+	hitlink_heartbeat_pack(&heartbeat,&msg);
 	hit_link_msg2buffer(&msg,hitlink_msg_buffer);
 	msg_len = strlen(hitlink_msg_buffer);
 	
